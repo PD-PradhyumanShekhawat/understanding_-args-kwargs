@@ -1,0 +1,15 @@
+def func(p1, p2, *args, k, **kwargs):
+"""
+  A docstring for this function is not that necessary.
+  It is just for learning purpose.
+  The function will print out the values as positional, keyword, arguments or keyword arguments
+  Any position or keyword after p1, p2 will be automatically assumed as arguments and the output will be displayed as a tuple.
+  
+"""
+  print(f"positional-or-keyword: ...{p1}, {p2}")
+  print(f"var-positional(*args): ........{args}")
+  print(f"keyword:...................{k}")
+  print(f"keyword arguments: ........{kwargs}")
+  
+  
+  func(1, 2, 3, 4, 5, 6, k=9, key_1=34, k=42)
